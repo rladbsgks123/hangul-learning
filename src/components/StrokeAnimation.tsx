@@ -39,7 +39,7 @@ export function StrokeAnimation({ strokes, playToken, className }: StrokeAnimati
 
   return (
     <svg viewBox="0 0 100 100" className={className}>
-      {strokes.map((stroke, i) => (
+      {strokes.slice(0, visibleCount).map((stroke, i) => (
         <motion.path
           key={`${resetKey}-${i}`}
           d={stroke.d}
@@ -49,7 +49,7 @@ export function StrokeAnimation({ strokes, playToken, className }: StrokeAnimati
           strokeLinecap="round"
           strokeLinejoin="round"
           initial={{ pathLength: 0 }}
-          animate={{ pathLength: i < visibleCount ? 1 : 0 }}
+          animate={{ pathLength: 1 }}
           transition={{ duration: STROKE_DRAW_DURATION, ease: 'easeInOut' }}
         />
       ))}
