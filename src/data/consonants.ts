@@ -45,7 +45,11 @@ export const consonants: Letter[] = [
     char: 'ㅁ',
     romanization: 'm',
     category: 'consonant',
-    strokes: [{ d: 'M22,20 L22,80' }, { d: 'M22,20 L78,20 L78,80 L22,80' }],
+    strokes: [
+      { d: 'M22,20 L22,80' },
+      { d: 'M22,20 L78,20 L78,80' },
+      { d: 'M22,80 L78,80' },
+    ],
     word: '무지개',
     wordRomanization: 'mu-ji-gae',
     emoji: '🌈',
@@ -88,8 +92,7 @@ export const consonants: Letter[] = [
     category: 'consonant',
     strokes: [
       { d: 'M35,18 L65,18' },
-      { d: 'M50,18 L20,85' },
-      { d: 'M50,35 L80,85' },
+      { d: 'M55,22 L22,58 L82,88' },
     ],
     word: '자동차',
     wordRomanization: 'ja-dong-cha',
@@ -102,8 +105,7 @@ export const consonants: Letter[] = [
     strokes: [
       { d: 'M44,6 L53,14' },
       { d: 'M35,20 L65,20' },
-      { d: 'M50,20 L20,85' },
-      { d: 'M50,37 L80,85' },
+      { d: 'M55,22 L22,58 L82,88' },
     ],
     word: '치즈',
     wordRomanization: 'chi-jeu',
