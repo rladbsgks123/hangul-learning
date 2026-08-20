@@ -34,8 +34,8 @@ export const consonants: Letter[] = [
     category: 'consonant',
     strokes: [
       { d: 'M18,15 L78,15 L78,48' },
-      { d: 'M18,33 L60,33' },
-      { d: 'M18,55 L18,80 L85,80' },
+      { d: 'M18,32 L78,32' },
+      { d: 'M18,55 L18,82 L85,82' },
     ],
     word: '라면',
     wordRomanization: 'ra-myeon',
