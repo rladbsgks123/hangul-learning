@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import { consonants } from '@/data/consonants'
 import { vowels } from '@/data/vowels'
-import { StrokeAnimation } from '@/components/StrokeAnimation'
+import { StrokeAnimation, getStrokeAnimationDuration } from '@/components/StrokeAnimation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { speak } from '@/lib/tts'
@@ -28,7 +28,7 @@ export function LearnScreen({ initialLetter, isLearned, onLearn }: LearnScreenPr
   const learned = isLearned(letter.char)
 
   const totalStrokeDelay = useMemo(
-    () => letter.strokes.length * 650 + 300,
+    () => getStrokeAnimationDuration(letter.strokes.length),
     [letter]
   )
 
