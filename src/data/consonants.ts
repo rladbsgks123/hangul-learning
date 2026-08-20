@@ -91,8 +91,8 @@ export const consonants: Letter[] = [
     romanization: 'j',
     category: 'consonant',
     strokes: [
-      { d: 'M22,25 L78,25' },
-      { d: 'M20,85 L50,45 L80,85' },
+      { d: 'M22,38 L78,38' },
+      { d: 'M50,42 L20,85 L50,42 L80,85' },
     ],
     word: '자동차',
     wordRomanization: 'ja-dong-cha',
@@ -104,8 +104,8 @@ export const consonants: Letter[] = [
     category: 'consonant',
     strokes: [
       { d: 'M46,8 L52,20' },
-      { d: 'M22,32 L78,32' },
-      { d: 'M20,88 L50,50 L80,88' },
+      { d: 'M22,38 L78,38' },
+      { d: 'M50,42 L20,85 L50,42 L80,85' },
     ],
     word: '치즈',
     wordRomanization: 'chi-jeu',
